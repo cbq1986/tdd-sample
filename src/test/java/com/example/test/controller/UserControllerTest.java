@@ -16,6 +16,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
+import com.example.test.controller.UserController;
 import com.example.test.dao.UserMapper;
 import com.example.test.domain.User;
 import com.example.test.service.UserService;
@@ -38,7 +39,7 @@ public class UserControllerTest {
     UserMapper userMapper;
 
     @Test
-    public void user_add_return201() throws Exception {
+    public void user_add_returnOK() throws Exception {
 
         User user = new User("Tom","123");
 
